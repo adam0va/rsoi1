@@ -107,8 +107,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Rest framework settings
 renderer_classes = ['rest_framework.renderers.JSONRenderer']
+
 if DEBUG:
     renderer_classes.append('rest_framework.renderers.BrowsableAPIRenderer')
+    
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': renderer_classes,
 }
