@@ -8,5 +8,6 @@ script:
   - python3 manage.py test
 deploy:
   provider: heroku
+  app: rsoi1-2019
   api_key:
     secure: "067ac21f-ee41-4bff-b8e2-c85ff5b1ba5a"
